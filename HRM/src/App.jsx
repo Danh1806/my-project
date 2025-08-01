@@ -35,12 +35,82 @@ function App() {
       </nav>
 
       {/* Nội dung bên phải */}
-      <div className="flex-1 p-6">
+      <div className="flex-1 p-0">
         {menu === "nhansu" && <NhanSuLayout />}
         {menu === "phongban" && <h2 className="text-xl">Nội dung phòng ban</h2>}
         {menu === "vitri" && <h2 className="text-xl">Nội dung vị trí</h2>}
         {menu === "boloc" && <h2 className="text-xl">Nội dung bộ lọc</h2>}
       </div>
+      {/*nội dung setting*/}
+      {/*thông tin*/}
+     <div className="flex-3">
+       <div class="mb-6">
+      <h2 class="text-lg font-semibold">TEST BASE THÀNH</h2>
+      <p class="text-sm text-gray-500">@thanhbase · aipencilclass@gmail.com</p>
+    </div>
+    {/*mục phụ*/}
+    <div>
+      <div class="text-xs uppercase text-gray-400 mb-2">Thông tin tài khoản</div>
+      <ul class="space-y-2">
+        <li class="flex items-center text-blue-600 font-semibold cursor-pointer">
+          <span class="w-6 text-center">⚙️</span>
+          <span>Tài khoản</span>
+        </li>
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">✏️</span>
+          <span>Chỉnh sửa</span>
+        </li>
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">🌐</span>
+          <span>Ngôn ngữ</span>
+        </li>
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">❗</span>
+          <span>Đổi mật khẩu</span>
+        </li>
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">🎨</span>
+          <span>Đổi màu hiển thị</span>
+        </li>
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">⏰</span>
+          <span>Lịch làm việc</span>
+        </li>
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">🛡️</span>
+          <span>Bảo mật hai lớp cá nhân</span>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-6">
+      <div class="text-xs uppercase text-gray-400 mb-2">Ứng dụng - Bảo mật</div>
+    </div>
+    <div class="mt-6">
+      <div class="text-xs uppercase text-gray-400 mb-2">Tùy chỉnh nâng cao</div>
+      <ul class="space-y-2">
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">⏰</span>
+          <span>Lịch sử đăng nhập cá nhân</span>
+        </li>
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">💻</span>
+          <span>Quản lý thiết bị</span>
+        </li>
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">✉️</span>
+          <span>Tùy chỉnh email thông báo</span>
+        </li>
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">⏰</span>
+          <span>Chỉnh sửa múi giờ</span>
+        </li>
+        <li class="flex items-center cursor-pointer">
+          <span class="w-6 text-center">🔗</span>
+          <span>Ủy quyền tạm thời</span>
+        </li>
+      </ul>
+    </div>
+     </div>
     </div>
   )
 }

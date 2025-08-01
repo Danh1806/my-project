@@ -64,12 +64,11 @@ export default function NhanSuLayout() {
   };
 
   return (
-    <div className="flex">
+    <div className="flex h-screen">
       {/* Nội dung */}
-      <div className="flex-1 p-6 overflow-x-auto">
+      <div className="flex-[1_0_0%] p-6 overflow-x-auto">
         {/* Khu thêm nhân sự */}
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-bold">Danh sách nhân sự</h2>
           <div className="flex gap-2">
             <input
               type="text"
@@ -93,8 +92,8 @@ export default function NhanSuLayout() {
             </button>
           </div>
         </div>
-
-        <table className="min-w-full border-collapse">
+         {/**bảng nhân sự */}
+        <table className="border-collapse min-w-full">
           <thead className="bg-gray-100">
             <tr className="text-left">
               <th className="py-3 px-4">Tên người dùng</th>
